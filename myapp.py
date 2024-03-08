@@ -79,7 +79,7 @@ def generate_pdf(form):
   
     clinic_logo_path = "uploads/"+form.clinic_logo.data.filename
     form.clinic_logo.data.save(dst=clinic_logo_path)
-    full_logo_path = 'http://127.0.0.1:8000/' +clinic_logo_path
+    full_logo_path = request.base_url +'/'+clinic_logo_path
   
     rendered_html = render_template('report.html', form=form, clinic_logo=full_logo_path, timestamp=timestamp, ip=client_ip)
    
