@@ -6,7 +6,7 @@
             "use": "@vercel/python",
             "config": {
                "maxLambdaSize": "15mb",
-               "installCommand": "sudo apt install -y apt install python3-pip pango && pip install --no-cache-dir -r requirements.txt && pip3 install --no-cache-dir -r requirements.txt"
+               "installCommand": "dnf install python3-pip pango gcc python3-devel gcc-c++ zlib-devel libjpeg-devel openjpeg2-devel libffi-devel && pip install --no-cache-dir -r requirements.txt && pip3 install --no-cache-dir -r requirements.txt"
          }
         }
     ],
