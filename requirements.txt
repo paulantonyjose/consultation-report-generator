@@ -11,7 +11,7 @@ Flask-CKEditor==0.5.1
 Flask-Datepicker==0.14
 Flask-WTF==1.2.1
 pdfkit==1.0.0
-cffi==1.15.1
-pango==0.0.1
-cairocffi==1.6.1
+cffi
+pango
+cairocffi
 gunicorn==20.0.4
