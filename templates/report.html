@@ -13,6 +13,11 @@
                 content: "This report is generated on {{ timestamp }} from {{ ip }} - Page " counter(page) " of " counter(pages);
                 font-size: 10pt;
                 border-top: 1px solid #ddd;
+                padding-top: 10px;
+                width: var(--table-width); /* Use the CSS variable for the width */
+                margin-left: 1cm;
+                margin-right: 1cm;
+
             }
             background-color: rgba(211, 211, 211, 0.3); 
 
@@ -119,5 +124,14 @@
             </tr>
         </tbody>
     </table>
+    <script>
+        window.onload = function() {
+            var table = document.querySelector('table');
+            var tableWidth = table.offsetWidth;
+            document.documentElement.style.setProperty('--table-width', tableWidth + 'px');
+        };
+    </script>
+    
+    
 </body>
 </html>
