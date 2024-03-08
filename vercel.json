@@ -6,7 +6,7 @@
             "use": "@vercel/python",
             "config": {
                "maxLambdaSize": "15mb",
-               "installCommand": "sudo apt install -y libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0 && pip install --no-cache-dir -r requirements.txt && pip3 install --no-cache-dir -r requirements.txt"
+               "installCommand": "sudo apt install -y apt install python3-pip libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0 libffi-dev libjpeg-dev libopenjp2-7-dev && pip install --no-cache-dir -r requirements.txt && pip3 install --no-cache-dir -r requirements.txt"
          }
         }
     ],
